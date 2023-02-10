@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+  <name>Gene Printing</name>
+  <description>
+Use ancient technology to recreate genetic sequences from digital archives. Reweave the fabric of humanity.
+  </description>
+  <author>LAJ-47FC9</author>
+  <supportedVersions>
+	  <li>1.4</li>
+  </supportedVersions>
+  <packageId>GenePrinting</packageId>
+  <modDependencies>
+	  <li>
+		  <packageId>Ludeon.RimWorld.Biotech</packageId>
+		  <displayName>Biotech</displayName>
+	  </li>
+</ModMetaData>
