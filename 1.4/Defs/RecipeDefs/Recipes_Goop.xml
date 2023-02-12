@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--Gene goop fron neutroamine-->
+  <RecipeDef>
+    <defName>GeneGoop_fromNeutro</defName>
+    <label>Produce gene goop from neutroamine</label>
+    <description>Assemble neutroamine into adenine, cytosine, guanine, and thymine, as well as a deoxyribose/phosphate binding agent.</description>
+    <jobString>Producing gene goop</jobString>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <researchPrerequisite>GenePrintingBasic</researchPrerequisite>
+    <workSkill>Intellectual</workSkill>
+    <skillRequirements>
+      <Intellectual>8</Intellectual>
+    </SkillRequirements>
+    <recipeUsers>
+      <li>GenePrintingTable</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <products>
+      <GeneGoop>1</GeneGoop>
+    </products>
+  </RecipeDef>
+  
+  <!--Gene goop from neutroamine - but in bulk!-->
+  <RecipeDef>
+    <defName>GeneGoop_fromNeutro_Bulk</defname>
+    <label>Produce gene goop in bulk</lavel>
+    <description>Assemble lots of neutroamine into lots of genegoop.</description>
+    <jobString>Producing gene goop</jobString>
+    <workAmount>3000</workAmount>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <researchPrerequisite>GenePrintingBasic</researchPrerequisite>
+    <workSkill>Intellectual</workSkill>
+    <skillRequirements>
+      <Intellectual>8</Intellectual>
+    </SkillRequirements>
+    <recipeUsers>
+      <li>GenePrintingTable</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>125</count>
+      </li>
+    </ingredients>
+    <products>
+      <GeneGoop>5</GeneGoop>
+    </products>
+  </RecipeDef>
+  
+</Defs>
