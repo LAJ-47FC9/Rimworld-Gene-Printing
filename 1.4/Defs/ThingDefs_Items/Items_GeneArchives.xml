@@ -1,28 +1,34 @@
-<ThingDef Name="GeneArchiveBase" ParentName="ResourceBase" Abstract="True">
-    <soundInteract>Metal_Drop</soundInteract>
-    <soundDrop>Standard_Drop</soundDrop>
-    <stackLimit>1</stackLimit>
-    <graphicData>
-      <drawSize>0.85</drawSize>
-    </graphicData>
-    <healthAffectsPrice>false</healthAffectsPrice>
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <MarketValue>200</MarketValue>
-      <Mass>1</Mass>
-      <Flammability>0</Flammability>
-      <DeteriorationRate>0</DeteriorationRate>
-    </statBases>
-    <intricate>true</intricate>
-    <thingCategories>
-      <li>Manufactured</li>
-    </thingCategories>
-    <comps>
-      <li Class="CompProperties_Studiable">
-        <cost>5</cost>
-        <completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
-        <completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetterText>
-        <completedLetterDef>PositiveEvent</completedLetterDef>
-      </li>
+<Defs>
+
+	<!--From which all else is born...-->
+	<ThingDef Name="GeneArchiveBase" ParentName="ResourceBase" Abstract="True">
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>1</stackLimit>
+		<graphicData>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+	<healthAffectsPrice>false</healthAffectsPrice>
+	<statBases>
+		<MaxHitPoints>100</MaxHitPoints>
+		<MarketValue>200</MarketValue>
+		<Mass>1</Mass>
+		<Flammability>0</Flammability>
+		<DeteriorationRate>0</DeteriorationRate>
+	</statBases>
+	<intricate>true</intricate>
+	<thingCategories>
+		<li>Manufactured</li>
+	</thingCategories>
+	<comps>
+		<li Class="CompProperties_Studiable">
+			<cost>5</cost>
+			<completedLetterTitle>{PARENT_label} studied: {RESEARCH} unlocked</completedLetterTitle>
+			<completedLetterText>By studying the {PARENT_label}, {STUDIER_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetterText>
+			<completedLetterDef>PositiveEvent</completedLetterDef>
+		</li>
     </comps>
-  </ThingDef>
+	</ThingDef>
+  
+
+</Defs>
