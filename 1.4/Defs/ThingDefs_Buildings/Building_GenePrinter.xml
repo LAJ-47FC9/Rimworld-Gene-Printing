@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+    
+  <!--Gene Printer-->
+    <ThingDef ParentName="BenchBase">
+      <defName>GenePrinter</defName>
+      <label>gene printer</label>
+      <thingClass>Building_WorkTable</thingClass>
+      <description>A foundational part of any serious genetic modification operation, Gene Printers are devices that form undifferentiated genetic mass into discrete genomes, from digitally stored templates. While the technology to do so has existed since the early 21st century, it only became truly useful with the advent of easy genetic modification. Such devices are fixtures of any remotely self-respecting genetics lab.\n\nThis version, first pioneered on Sorne just before the Fall of Sorne, also includes a build-in gene recycler and refiner, capable of refining raw neutroamine into gene goop.</description>
+      <graphicData>
+        <texPath>Things/Building/Misc/GeneAssembler/GeneAssembler</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(3, 2)</drawSize>
+        <shadowData>
+          <volume>(2.55, 0.75, 1.7)</volume>
+        </shadowData>
+      </graphicData>
+      <descriptionHyperlinks>GeneGoop</descriptionHyperlinks>
+      <designationCategory>Biotech</designationCategory>
+      <altitudeLayer>Building</altitudeLayer>
+      <fillPercent>0.5</fillPercent>
+      <size>(3, 2)</size>
+      <hasInteractionCell>true</hasInteractionCell>
+      <interactionCellOffset>(0, 0, 2)</interactionCellOffset>
+      <defaultPlacingRot>South</defaultPlacingRot>
+      <canOverlapZones>false</canOverlapZones>
+      <useHitPoints>True</useHitPoints>
+      <passability>PassThroughOnly</passability>
+      <pathCost>50</pathCost>
+      <surfaceType>Item</surfaceType>
+      <statBases>
+        <MaxHitPoints>500</MaxHitPoints>
+        <WorkToBuild>10000</WorkToBuild>
+        <Flammability>0.5</Flammability>
+        <AssemblySpeedFactor>1.0</AssemblySpeedFactor>
+      </statBases>
+      <costList>
+        <Steel>150</Steel>
+        <Plasteel>50</Plasteel>
+        <ComponentIndustrial>5</ComponentIndustrial>
+      </costList>
+      <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+      <inspectorTabs>
+        <li>ITab_Bills</li>
+      </inspectorTabs>
+          <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <paintable>true</paintable>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>500</basePowerConsumption>
+        <idlePowerDraw>25</idlePowerDraw>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+  </ThingDef>
+
+</Defs>
