@@ -1,60 +1,66 @@
-  <ResearchProjectDef>
-    <defName>GenePrintingBasic</defName>
-    <label>gene printing</label>
-    <description>It took a lot of time and manpower to develop the xenogenes seen as commonplace in the galaxy today. Replicating that in your small colony would be impossible - but fortunately, you don’t have to, as 99% of the work has already been done for you. This research will allow you to create a Gene Printer, gene goop, and genes with a complexity level of 0 or 1.</description>
-    <baseCost>1500</baseCost>
-    <researchViewX>13.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
-    <techLevel>Spacer</techLevel>
-    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <prerequisites>
-      <li>Xenogermination</li>
-      <li>MicroelectronicsBasics</li>
-    </prerequisites>
-    <requiredStudied>
-      <li>GeneArchiveBasic</li>
-    </requiredStudied>
-  </ResearchProjectDef>
+<Defs>
 
-  <ResearchProjectDef>
-    <defName>GenePrintingAdvanced</defName>
-    <label>advanced gene printing</label>
-    <description>Delve deeper into gene printing, and discover the ability to print advanced gene sequences. This research will allow you to print genes with a complexity level of 2 or more.</description>
-    <baseCost>3000</baseCost>
-    <researchViewX>13.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
-    <techLevel>Ultratech</techLevel>
-    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <requiredResearchFacilities>
-      <li>MultiAnalyzer</li>
-    </requiredResearchFacilities>
-    <prerequisites>
-      <li>GenePrintingBasic</li>
-      <li>GeneProcessor</li>
-    </prerequisites>
-    <requiredStudied>
-      <li>GeneArchiveAdvanced</li>
-    </requiredStudied>
-  </ResearchProjectDef>
+	<!--Basic Gene Printing - the start of your journey-->
+	<ResearchProjectDef>
+		<defName>GenePrintingBasic</defName>
+		<label>gene printing</label>
+		<description>It took a lot of time and manpower to develop the xenogenes seen as commonplace in the galaxy today. Replicating that in your small colony would be impossible - but fortunately, you don’t have to, as 99% of the work has already been done for you. This research will allow you to create a Gene Printer, gene goop, and genes with a complexity level of 0 or 1.</description>
+		<baseCost>1500</baseCost>
+		<researchViewX>13.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<prerequisites>
+			<li>Xenogermination</li>
+			<li>MicroelectronicsBasics</li>
+		</prerequisites>
+		<requiredStudied>
+			<li>GeneArchiveBasic</li>
+		</requiredStudied>
+	</ResearchProjectDef>
 
-<ResearchProjectDef>
-    <defName>GenePrintingArchite</defName>
-    <label>advanced gene printing</label>
-    <description>“He who plays with the Devil’s toys will be brought by degrees to wield his sword.”\n\nDecrypt the Archite Gene Archive and gain the ability to print genes that require archite capsules. Follow in the footsteps of the machine gods themselves, but do not fall to hubris - from this height, it leaves quite a mark.
-    </description>
-    <baseCost>6000</baseCost>
-    <researchViewX>13.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
-    <techLevel>Ultratech</techLevel>
-    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <requiredResearchFacilities>
-      <li>MultiAnalyzer</li>
-    </requiredResearchFacilities>
-    <prerequisites>
-      <li>GenePrintingAdvanced</li>
-      <li>Archogenetics</li>
-    </prerequisites>
-    <requiredStudied>
-      <li>GeneArchiveArchite</li>
-    </requiredStudied>
-  </ResearchProjectDef>
+	<!--Advanced Gene Printing - this is where the fun begins!-->
+	<ResearchProjectDef>
+		<defName>GenePrintingAdvanced</defName>
+		<label>advanced gene printing</label>
+		<description>Delve deeper into gene printing, and discover the ability to print advanced gene sequences. This research will allow you to print genes with a complexity level of 2 or more.</description>
+		<baseCost>3000</baseCost>
+		<researchViewX>13.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+		<techLevel>Ultratech</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<prerequisites>
+			<li>GenePrintingBasic</li>
+			<li>GeneProcessor</li>
+		</prerequisites>
+		<requiredStudied>
+			<li>GeneArchiveAdvanced</li>
+		</requiredStudied>
+	</ResearchProjectDef>
+
+	<!--Archite Gene Printing - oh dear...-->
+	<ResearchProjectDef>
+		<defName>GenePrintingArchite</defName>
+		<label>advanced gene printing</label>
+		<description>“He who plays with the Devil’s toys will be brought by degrees to wield his sword.”\n\nDecrypt the Archite Gene Archive and gain the ability to print genes that require archite capsules. Follow in the footsteps of the machine gods themselves, but do not fall to hubris - from this height, it leaves quite a mark.</description>
+		<baseCost>6000</baseCost>
+		<researchViewX>13.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+		<techLevel>Ultratech</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<prerequisites>
+			<li>GenePrintingAdvanced</li>
+			<li>Archogenetics</li>
+		</prerequisites>
+		<requiredStudied>
+			<li>GeneArchiveArchite</li>
+		</requiredStudied>
+	</ResearchProjectDef>
+ 
+</Defs>
