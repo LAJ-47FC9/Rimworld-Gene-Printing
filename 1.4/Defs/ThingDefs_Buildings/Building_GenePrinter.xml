@@ -43,9 +43,9 @@
       <inspectorTabs>
         <li>ITab_Bills</li>
       </inspectorTabs>
-          <building>
-      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-      <paintable>true</paintable>
+      <building>
+        <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      </building>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
