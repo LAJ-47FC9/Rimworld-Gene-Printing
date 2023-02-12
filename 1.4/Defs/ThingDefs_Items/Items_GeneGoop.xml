@@ -1,1 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
 
+	<!--Guess.-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>GeneGoop</defName>
+		<label>gene goop</label>
+		<description>Referred to as ‘undifferentiated genetic mass’ by scientists and pedants, gene goop is a wondrously useful tool produced by glitterworlds, for the purposes of creating genes from stored data without requiring extraction from a living subject. It is made up of raw adenine, cytosine, guanine, and thymine - the building blocks of DNA, and the vast majority of life by extension - and a deoxyribose/phosphate bonding agent.\n\nWhile bulk production of genes requires large amounts of neutroamine, it is regardless an invaluable tool for any aspiring mad scientist. Just don't mistake it for yoghurt in your lab fridge.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Neutroamine</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<useHitPoints>true</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<MarketValue>300</MarketValue>
+			<Mass>0.2</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>false</smeltable>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>7</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+</Defs>
